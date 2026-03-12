@@ -37,7 +37,7 @@ export const proxy = async (req: NextRequest) => {
   response.cookies.set("x-auth-token", token, {
     path: "/",
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
+    secure:"production",
     sameSite: "strict",
   })
 
